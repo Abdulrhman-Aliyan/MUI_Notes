@@ -26,6 +26,12 @@ export default function Notes() {
     setNotes(newNotes);
   }
 
+  const breakpoints = {
+    default: 3,
+    1100: 2,
+    700: 1
+  }
+
   return (
     <Container>
       {/* <Grid container spacing={3}>
@@ -44,7 +50,7 @@ export default function Notes() {
       </Grid> */}
 
       <Masonry
-      breakpointCols={3}
+      breakpointCols={breakpoints}
       className="my-masonry-grid"
       columnClassName="my-masonry-grid_column"
       >
